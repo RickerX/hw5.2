@@ -5,69 +5,73 @@ public class Main {
         System.out.println("Задание 1");
         int salary = 29000;
         int total = 0;
-        while (total < 2_459_000) {
+        int target = 2_459_000;
+        for (int i = 0;total < target;) {
+            i++;
             total = total + total / 100;
             total = total + salary;
-            System.out.println("Месяц, сумма накоплений равна " + total + " рублей");
+            System.out.println("Месяц," + i + " сумма накоплений равна " + total + " рублей");
         }
         // Задание 2
         System.out.println("Задание 2");
         int number = 0;
         while (number <= 9) {
             number = number + 1;
-            System.out.println(number);
+            System.out.print(" "+number);
         }
         for (int i = 10; i >= 1; i--) {
-            System.out.println(i);
+            System.out.print(" "+i);
         }
         // Задание 3
-        System.out.println("Задание 3");
+
+        System.out.println("\nЗадание 3");
         int populationOfTheCountry = 12_000_000;
         int arrivalOfThePopulation = (populationOfTheCountry / 1000) * (17 - 8);
         int totalPopulation = 0;
         for (int i = 1; i <= 10; i++) {
-            arrivalOfThePopulation = (populationOfTheCountry / 1000) * (17 - 8);
-            populationOfTheCountry = populationOfTheCountry + arrivalOfThePopulation;
+            populationOfTheCountry = populationOfTheCountry + populationOfTheCountry / 1000 * (17-8);
             totalPopulation = populationOfTheCountry;
             System.out.println("Год " + i + " , численность населения составляет " + totalPopulation + " человек.");
         }
         // Домашнее задание - 2
         // Задание 1
         System.out.println("Задание 1");
-        int Total = 0;
+        total = 0;
+        int allPeople = 12_000_000;
         int firstContribution = 15_000;
-        for (int i = 1; Total <= 12_000_000; i++) {
-            Total = Total + firstContribution;
-            Total = Total + Total / 100 * 7;
-            System.out.println("Василию понадобится месяцев: " + i + " баланс: " + Total);
+        for (int month = 1; total <= 12_000_000; month++) {
+            total = total + firstContribution;
+            total = total + total / 100 * 7;
+            System.out.println("Василию понадобится месяцев: " + month + " баланс: " + total);
         }
         // Задание 2
         System.out.println("Задание 2");
-        Total = 0;
+        total = 0;
         firstContribution = 15_000;
-        for (int i = 1; Total <= 12_000_000; i++) {
-            Total = Total + firstContribution;
-            Total = Total + Total / 100 * 7;
-            if (i % 6 == 0) {
-                System.out.println("Василию понадобится месяцев: " + i + " баланс: " + Total);
+        for (int month = 1; total <= 12_000_000; month++) {
+            total = total + firstContribution;
+            total = total + total / 100 * 7;
+            if (month % 6 == 0) {
+                System.out.println("Василию понадобится месяцев: " + month + " баланс: " + total);
             }
         }
         // Задание 3
         System.out.println("Задание 3");
-        Total = 0;
+        total = 0;
         firstContribution = 15_000;
-        for (int i = 1; i <= 108; i++) {
-            Total = Total + firstContribution;
-            Total = Total + Total / 100 * 7;
-            if (i % 6 == 0) {
-                System.out.println("Василию понадобится месяцев: " + i + " баланс: " + Total);
+        int year = 12 * 9;
+        for (int month = 1; month <= year; month++) {
+            total = total + firstContribution;
+            total = total + total / 100 * 7;
+            if (month % 6 == 0) {
+                System.out.println("Василию понадобится месяцев: " + month + " баланс: " + total);
             }
         }
         // Задание 4
         System.out.println("Задание 4");
         int friday = 2;
         int month = 31;
-        for (int i = 0; i <= 31; i++) {
+        for (int i = 0; i <= month; i++) {
 
             if (i % 7 == friday) {
                 System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
@@ -76,10 +80,13 @@ public class Main {
         // Домашнее задание -3
         // Задание 1
         System.out.println("Задание 1");
-        int year2022 = 2022;
-        while (year2022 <= 2222) {
-            year2022 = year2022 + 79;
-            System.out.println(year2022);
+        int year2122 = 2122;
+        int year1822 = 1822;
+        int cometFlyby = 79;
+        for (int i = 0; i <= year2122; i = i + cometFlyby) {
+            if (i >= year1822 && i <= year2122 ) {
+                System.out.println(i);
+            }
         }
         // Задание 2
         System.out.println("Задание 2");

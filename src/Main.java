@@ -6,11 +6,11 @@ public class Main {
         int salary = 29000;
         int total = 0;
         int target = 2_459_000;
-        for (int i = 0;total < target;) {
-            i++;
+        for (int month = 0;total < target;) {
+            month++;
             total = total + total / 100;
             total = total + salary;
-            System.out.println("Месяц," + i + " сумма накоплений равна " + total + " рублей");
+            System.out.println("Месяц," + month + " сумма накоплений равна " + total + " рублей");
         }
         // Задание 2
         System.out.println("Задание 2");
@@ -28,10 +28,10 @@ public class Main {
         int populationOfTheCountry = 12_000_000;
         int arrivalOfThePopulation = (populationOfTheCountry / 1000) * (17 - 8);
         int totalPopulation = 0;
-        for (int i = 1; i <= 10; i++) {
-            populationOfTheCountry = populationOfTheCountry + populationOfTheCountry / 1000 * (17-8);
+        for (int year = 1; year <= 10; year++) {
+            populationOfTheCountry = populationOfTheCountry + arrivalOfThePopulation;
             totalPopulation = populationOfTheCountry;
-            System.out.println("Год " + i + " , численность населения составляет " + totalPopulation + " человек.");
+            System.out.println("Год " + year + " , численность населения составляет " + totalPopulation + " человек.");
         }
         // Домашнее задание - 2
         // Задание 1
@@ -39,7 +39,7 @@ public class Main {
         total = 0;
         int allPeople = 12_000_000;
         int firstContribution = 15_000;
-        for (int month = 1; total <= 12_000_000; month++) {
+        for (int month = 1; total <= allPeople; month++) {
             total = total + firstContribution;
             total = total + total / 100 * 7;
             System.out.println("Василию понадобится месяцев: " + month + " баланс: " + total);
